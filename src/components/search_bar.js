@@ -25,7 +25,7 @@ class SearchBar extends Component {
 // every class must have a render function and return JSX
 // onChange is react defined prop 
 
-export default SearchBar;
+export default SearchBar
 
 
 // functional component vs class component
