@@ -13,21 +13,26 @@ class SearchBar extends Component {
 
   render() {
     return (
-     <div>
+     <div className={'search-bar'}>
     	<input 
     		value={this.state.term}
-    		onChange = {event => this.setState({ term: event.target.value })} /> 
+    		onChange = {event => this.onInputChange(event.target.value)} /> 
      </div> 
     );
   }
+
+  onInputChange(term) {
+    this.setState({term});
+    this.props.onSearchTermChange(term);
+  }
 }
-// onChange == props
-// every class must have a render function and return JSX
-// onChange is react defined prop 
 
 export default SearchBar
 
-
+// onChange == props
+// every class must have a render function and return JSX
+// onChange is react defined prop 
+//
 // functional component vs class component
 
 // import React from 'react';
