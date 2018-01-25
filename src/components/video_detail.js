@@ -1,13 +1,14 @@
 import React from 'react';
 
 const VideoDetail = ({video}) => {
-	if (!video) {
-		return <div>Loading...</div>;
+	if( !video ){
+		return <div>{'loading....'}</div>
 	}
-
-	const videoId = video.id.video.Id;
-	const url = `https://www.youtube.com/embed/${videoId}`;
-
+	const { id } = video;
+	if( !id ){
+		return <div>{'ummmmm no id, so i dont know what to load!!! check your object return'}</div>
+	}	
+	const url = `https://www.youtube.com/embed/${id}`;
 	return (
 		<div className={'video-detail col-md-8'}>
 			<div className={'embed-responsive embed-responsive-16by9'}>
@@ -19,6 +20,6 @@ const VideoDetail = ({video}) => {
 			</div>
 	    </div>
 	);
-};
+ };
 
 export default VideoDetail

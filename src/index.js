@@ -20,10 +20,13 @@ class App extends Component {
 	}
 
 render() {
+	// console.log(this.state.videos)
+	const video = this.state.videos.length > 0 ? this.state.videos[0] : null
+	
   return (
   <div>
     <SearchBar />
-    <VideoDetail videos={this.state.videos[0]} />
+    <VideoDetail video={video} />
     <VideoList videos={this.state.videos} /> 
   </div>
   );
