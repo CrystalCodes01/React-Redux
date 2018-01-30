@@ -22,5 +22,5 @@ const VideoListItem = ({video, onVideoSelect}) => {
 export default VideoListItem
 
 // media-left && media-body children of list group item stop closing divs too soon!!
-// ({video, onVideoSelect}) calling props
-
+// ({video, onVideoSelect}) calling multiple props
+// onVideoSelect === function 

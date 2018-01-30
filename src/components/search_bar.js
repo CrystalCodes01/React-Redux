@@ -42,3 +42,6 @@ export default SearchBar
 // };
 //
 // export default SearchBar;
+
+
+// using component level state here (local)
