@@ -1,6 +1,5 @@
 import React from 'react';
 
-// props === object === video 
 const VideoListItem = ({video, onVideoSelect}) => {
 	const imageUrl = video.snippet.thumbnails.default.url;
 
@@ -21,6 +20,7 @@ const VideoListItem = ({video, onVideoSelect}) => {
 
 export default VideoListItem
 
+// props === object === video 
 // media-left && media-body children of list group item stop closing divs too soon!!
 // ({video, onVideoSelect}) calling multiple props
 // onVideoSelect === function 

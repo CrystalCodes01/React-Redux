@@ -1,9 +1,5 @@
 import React, { Component } from 'react'; 
 
-// class based component -- use class for dynamic components 
-// class based has state object
-// super calls parent class 
-// declare term on state (this.state.term)
 class SearchBar extends Component {
 	constructor(props) {
 		super(props);
@@ -28,6 +24,11 @@ class SearchBar extends Component {
 }
 
 export default SearchBar
+
+// class based component -- use class for dynamic components 
+// class based has state object
+// super calls parent class 
+// declare term on state (this.state.term)
 
 // onChange == props
 // every class must have a render function and return JSX
